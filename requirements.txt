@@ -5,3 +5,4 @@ pandas_ta
 requests
 bs4
 aiohttp
+numpy==1.23.5
