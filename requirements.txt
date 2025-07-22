@@ -1,8 +1,7 @@
-
 python-telegram-bot==20.3
+setuptools
 pandas
 pandas_ta
 requests
 bs4
 aiohttp
-setuptools
