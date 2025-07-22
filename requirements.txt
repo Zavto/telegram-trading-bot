@@ -1,6 +1,7 @@
 --upgrade pip
-setuptools==68.2.2
+
 python-telegram-bot==20.3
+setuptools==68.2.2
 pandas
 pandas_ta
 requests
