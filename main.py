@@ -13,7 +13,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def signal(update: Update, context: ContextTypes.DEFAULT_TYPE):
     signal = get_market_signal()
-    await update.message.reply_text(f"📊 Сигнал ринку:
+    await update.message.reply_text(f"📊 Сигнал ринку: {signal}")
 {signal}")
 
 async def price(update: Update, context: ContextTypes.DEFAULT_TYPE):
