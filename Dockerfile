@@ -1,18 +1,18 @@
-# Вибираємо стабільний Python
+# Використовуємо стабільний Python 3.10
 FROM python:3.10-slim
 
-# Встановлюємо оновлення і pip
+# Оновлення системи та pip
 RUN apt-get update && apt-get install -y build-essential && \
     pip install --upgrade pip
 
-# Створюємо робочу директорію
+# Робоча директорія
 WORKDIR /app
 
-# Копіюємо все в контейнер
+# Копіюємо проєкт
 COPY . .
 
-# Встановлюємо залежності
+# Встановлення залежностей
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Запускаємо бот
+# Запуск бота
 CMD ["python", "main.py"]
