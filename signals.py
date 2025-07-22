@@ -1,4 +1,3 @@
-
 import requests
 import pandas as pd
 import pandas_ta as ta
@@ -31,8 +30,7 @@ def get_market_signal():
         signal.append("🔻 Ціна нижче EMA (даунтренд)")
 
     signal.extend(patterns)
-    return "
-".join(signal)
+    return "\n".join(signal)  # <- ось так правильно
 
 def get_current_price():
     df = get_klines(limit=2)
